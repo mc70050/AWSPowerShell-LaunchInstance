@@ -1,7 +1,8 @@
 # Setting AWS Credentials
-# This set of accesskey and secretkey are from my own account's admin user
-Set-AWSCredential -AccessKey AKIAISFQ46LHYZE4CCMA -SecretKey SUg+CaTp8kgnEA/+Mb5JoQmARtpySRFl3WlVn2n2 -StoreAs MichaelAdmin
-Initialize-AWSDefaultConfiguration -ProfileName MichaelAdmin -Region ap-southeast-2
+# Replace 'key' and 'secretKey' with actual values with the appropriate permissions
+# Region is set to ap-southeast-2, which is Sydney Region
+Set-AWSCredential -AccessKey key -SecretKey secretKey -StoreAs Admin
+Initialize-AWSDefaultConfiguration -ProfileName Admin -Region ap-southeast-2
 
 
 # Create a new VPC with CIDR 10.255.0.0/16
